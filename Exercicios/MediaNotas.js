@@ -18,7 +18,7 @@ function media(aluno) {
   }, 0);
 
   media = soma / aluno.notas.length;
-
+  //aluno.media = media;
   alunoMedia.push({
     ...aluno,
     "media": media,
