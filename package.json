@@ -1,0 +1,9 @@
+{
+  "name": "JavaScript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "repository": "https://github.com/fernandomarca/JavaScript-prBr.git",
+  "author": "fernandomarca <fernandomarca@hotmail.com>",
+  "license": "MIT"
+}
