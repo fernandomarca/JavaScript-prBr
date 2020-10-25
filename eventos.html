@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <style>
+        div{
+            display: inline;
+            padding: 10px;
+            font-size:2rem;
+            background-color: rgb(0, 81, 255);
+            color:whitesmoke;
+        }
+    </style>
+</head>
+<body>
+
+    <div 
+    onmouseover="mouseOver(this)"
+    onmouseout="mouseOut(this)"
+    >
+    Click
+    </div>
+    <br /><br />
+
+    <p>Texto</p>
+
+    <input  
+    id="input" 
+    oninput="handleText(this)" 
+    type="text" 
+    />
+    <br /><br />
+    <div id="btn">Button 2</div>
+
+    <script src="./eventos.js"></script>
+</body>
+</html>
