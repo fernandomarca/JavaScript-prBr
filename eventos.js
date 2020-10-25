@@ -17,8 +17,11 @@ function handleText(element) {
 }
 
 function mudarText() {
+    let input = document.getElementById('input');
     let p = document.getElementsByTagName('p')[0];
-    p.innerHTML = "novo texto com func.mudartext";
+    p.innerHTML = input.value;
+
+    this.innerHTML = this.innerHTML.toUpperCase();
 }
 
 (function loaded() {
