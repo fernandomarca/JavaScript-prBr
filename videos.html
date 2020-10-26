@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Vídeos</title>
+
+  <style>
+    .container {
+      position: relative;
+      width:640px;
+      height: 360px;
+    }
+
+    .video{
+      width:100%;
+      border: 1px solid;
+    }
+
+    .controle{
+      position: absolute;
+      top: 0px;
+      width:100%;
+      height: 100%;
+    }
+
+    .btn{
+      position: relative;
+      font-size: 40px;
+      color: black;
+      padding:10px;
+      top:70%;
+      /* transform:translateY(100%); */
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="container">
+    <video 
+    class="video"
+    src="https://www.youtube.com/watch?v=5nA8UKRPreI"
+    preload="auto"
+    muted
+    poster=""
+    >
+  </video>
+  
+    <div class="controle">
+      <i class="fa fa-cloud btn"></i>
+      <i class="fa fa-cloud btn"></i>
+    </div>
+
+  </div>
+
+  <script src="./videos.js"></script>
+</body>
+</html>
