@@ -19,6 +19,10 @@
       border: 1px solid;
     }
 
+    audio{
+      margin-top: 50px;
+    }
+
     .controle{
       position: absolute;
       text-align: center;
@@ -48,7 +52,7 @@
     preload="auto"
     poster=""
     >
-  </video>
+    </video>
   
     <div class="controle">
       <i class="fa fa-undo btn zoom" onclick="retroceder()"></i>
@@ -61,6 +65,14 @@
 
   </div>
 
-  <script src="./videos.js"></script>
+  <audio controls>
+    <source 
+    type="audio/mpeg"
+    src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+    >
+  </audio>
+
+  <script 
+  src="./videos.js"></script>
 </body>
 </html>
