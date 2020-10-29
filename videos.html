@@ -21,6 +21,7 @@
 
     .controle{
       position: absolute;
+      text-align: center;
       top: 0px;
       width:100%;
       height: 100%;
@@ -29,28 +30,33 @@
     .btn{
       position: relative;
       font-size: 40px;
-      color: black;
+      color: white;
       padding:10px;
-      top:70%;
-      /* transform:translateY(100%); */
+      top:100%;
+      transform:translateY(-110%);
+      cursor:pointer;
     }
   </style>
 </head>
 <body>
   
   <div class="container">
-    <video 
+    <video
+    id="video1" 
     class="video"
-    src="https://www.youtube.com/watch?v=5nA8UKRPreI"
+    src="./assets/video.mkv"
     preload="auto"
-    muted
     poster=""
     >
   </video>
   
     <div class="controle">
-      <i class="fa fa-cloud btn"></i>
-      <i class="fa fa-cloud btn"></i>
+      <i class="fa fa-undo btn zoom" onclick="retroceder()"></i>
+      <i class="fa fa-redo btn zoom" onclick="avancar()">R</i>
+      <i class="fa fa-minus-circle btn zoom" onclick="diminuir_vel()"></i>
+      <i class="fa fa-plus-circle btn zoom" onclick="aumentar_vel()"></i>
+      <i class="fa fa-play-circle btn zoom" onclick="play()" ></i>
+      <i class="fa fa-stop-circle btn zoom" onclick="stop()"></i>
     </div>
 
   </div>
