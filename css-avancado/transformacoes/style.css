@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  /* width: 420px; */
+  /* transform: rotate(45Deg) */
+  /* transform: scale(1) */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.primeira {
+  background-color: red;
+  height: 300px;
+  width: 420px;
+  transform: skew(30deg, 30deg) scale(0.7, 1);
+
+}

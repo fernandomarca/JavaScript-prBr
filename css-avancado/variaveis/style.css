@@ -1,0 +1,27 @@
+:root {
+  --var_color: aqua;
+
+  --square-size: 300px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.p2 {
+  color: var(--var_color);
+  font-size: 20px;
+}
+
+.p3 {
+  color: red;
+  font-size: 20px;
+}
+
+.square {
+  width: var(--square-size);
+  height: var(--square-size);
+  background-color: green;
+}

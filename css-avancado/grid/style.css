@@ -1,0 +1,102 @@
+:root {
+  --var_color: aqua;
+
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: black;
+}
+
+.container {
+  height: 400px;
+  display: grid;
+
+  grid-template-areas: "a2 a2 a2 a2 a2 a2"
+    "a1 a1 a3 a3 a3 a3"
+    "a4 a4 a4 a5 a5 a5"
+    "a6 a6 a6 a6 a6 a6"
+  ;
+
+
+  /* grid-template-rows: auto auto;
+  grid-template-columns: 1fr 2fr 1fr; */
+
+  /* grid-template: auto auto / auto auto auto;
+
+  justify-items: center;
+
+  align-items: center;
+
+  justify-content: flex-end;
+
+  grid-gap: 10px;
+
+  background-color: darkgrey;
+
+  color: white; */
+  /* padding: 10px; */
+
+  /* grid-row-gap: 10px;
+  grid-column-gap: 30px; */
+
+}
+
+.item1 {
+  grid-area: a1;
+
+}
+
+.item2 {
+  grid-area: a2;
+}
+
+.item3 {
+  grid-area: a3;
+}
+
+.item4 {
+  grid-area: a4;
+}
+
+.item5 {
+  grid-area: a5;
+}
+
+.item6 {
+  grid-area: a6;
+}
+
+.rect {
+  color: white;
+  /* width: 100px; */
+  height: 100px;
+}
+
+.rect.r1 {
+  /* order: 2; */
+  /* flex-grow: 1; */
+  /* flex-shrink: 0; */
+  background-color: red;
+  /* align-self: flex-end; */
+}
+
+.rect.r2 {
+  /* align-self: center; */
+  /* order: 1; */
+  /* flex-grow: 1; */
+  background-color: blue;
+  /* width: 400px; */
+}
+
+.rect.r3 {
+  /* order: 2; */
+  /* flex-shrink: 0; */
+  /* flex-grow: 3; */
+  background-color: green;
+}

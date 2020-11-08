@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <img class="img" src="./59258828.png" alt="">
+
+    <!-- <div class="primeira"></div> -->
+  </div>
+
+  <script>
+    
+    var div = document.getElementsByClassName('img');
+    var skew=30;
+
+    
+    var int = setInterval(()=>{
+      skew+=5;
+      console.log(skew)
+     
+
+      div[0].setAttribute("style",`transform: skew(${skew}deg, ${skew}deg) scale(0.7, 1) rotate(${skew}deg)`);
+
+      
+    },200);
+
+    if(skew == 150){
+        clearInterval(int)
+      }
+
+    
+
+
+  </script>
+</body>
+</html>

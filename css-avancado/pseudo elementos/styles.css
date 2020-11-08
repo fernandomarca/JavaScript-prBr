@@ -1,0 +1,81 @@
+p::first-line {
+  color: red;
+}
+
+h1::first-letter {
+  color: blue;
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+
+li {
+  list-style: none;
+}
+
+li::before {
+  content: 'x';
+  color: blue;
+  font-size: 20px;
+}
+
+li::after {
+  content: '[]';
+  color: red;
+  font-size: 20px;
+}
+
+p::selection {
+  background-color: yellow;
+  color: orangered;
+}
+
+li {
+  text-transform: uppercase;
+}
+
+/* seletores 
+
+li:first {} primeiro li de ul
+ul li {} todos os li
+ul > li {} primeiro nivel de li
+ul + p{} primeiro p depois do ul
+ul ~ p{} todos os p depois do ul
+*/
+
+/* Atributo como seletor 
+
+  [width="500"]{} seleciona os elementos com width=500
+  [width=]{} seleciona todos os elementos com width
+  [title^=te] seleciona todos que inicial com attr=te
+*/
+
+/* Pseudos classes
+  input:focus{
+    color:red;
+  }
+
+*/
+
+input:focus {
+  color: red;
+}
+
+li:first-child {
+  color: blue;
+}
+
+li:first-of-type {
+  color: blue;
+}
+
+li:nth-child(4) {
+  color: blue;
+}
+
+li:nth-last-child(2) {
+  color: red;
+}
+
+li:nth-of-type(2n) {
+  background-color: azure;
+}
