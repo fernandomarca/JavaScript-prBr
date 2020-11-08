@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    "use strict"
+
+    //A arrow function perde o contexto THIS
+    let dobro = ()=>{
+      console.log(this)
+      console.log(this.x * 2);
+    } 
+    // dobro();
+    //retrona o Window e NaN
+
+    let dobro2 = function (){
+      console.log(this)
+      console.log(this.x * 2);
+    } 
+    
+    let objeto = {
+      x:8,
+      funcDobro:dobro2
+    }
+
+    // objeto.funcDobro();
+    
+    //Bind so funciona com funcao anônima ou funcao comum
+    //nao pode ser arrow function
+    var funcBind = dobro2.bind(objeto);
+
+    funcBind();
+
+  </script>
+</body>
+</html>
