@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+
+    let usuarios =['adriano','marcia', 'jose'];
+
+    function inserirUsuario(nome,callback){
+
+      setTimeout(()=>{
+        usuarios.push(nome);
+        callback();
+      },1000);
+      
+    }
+
+    function listarUsuarios(){
+      console.log(usuarios);
+    }
+
+    inserirUsuario('igor',listarUsuarios);
+
+    // listarUsuarios();
+
+  // function ola(){
+  //   console.log('olá');
+  // }
+
+  // function tchau(){
+  //   console.log("tchau");
+  // }
+
+  // function saudacao(callback,nome){
+
+  //   callback();
+  //   console.log(nome);
+
+  // }
+
+  // saudacao(ola,"fernando")
+
+  </script>
+</body>
+</html>
