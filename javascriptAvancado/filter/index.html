@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+
+    function novoAluno(nome,idade){
+      return {nome,idade}
+    }
+
+    let alunos =[
+      novoAluno("mario",23),
+      novoAluno("jose",45),
+      novoAluno("fernando",33),
+      novoAluno("rhayza",27)
+    ]
+    
+    // console.log(alunos);
+
+    // for(let aluno of alunos ){
+    //   if(aluno.idade <30){
+    //     console.log(aluno.nome);
+    //   }
+    // }
+
+    function temMenosde30(aluno){
+      return aluno.idade <30;
+    }
+
+    // let alunosComMenosde30 = alunos.filter(temMenosde30);
+
+    // let alunosComMenosde30 = alunos.filter(aluno=>aluno.idade<30);
+
+    // console.log(alunosComMenosde30)
+
+    //funcao de callback exemplo de filtro
+
+    function filtroCallback(callback){
+      let alunosFiltrados=[];
+      for(let aluno of this){
+        if(callback(aluno)){
+          alunosFiltrados.push(aluno);
+        }
+      }
+      return alunosFiltrados;
+    }
+
+    alunos.functionFilter=filtroCallback;
+
+    console.log(alunos.functionFilter(temMenosde30));
+
+    console.log(alunos);
+
+    
+  </script>
+</body>
+</html>

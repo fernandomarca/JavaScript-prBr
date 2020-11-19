@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+
+    function novoAluno(nome,idade){
+      return {nome,idade}
+    }
+
+    let alunos =[
+      novoAluno("mario",23),
+      novoAluno("jose",45),
+      novoAluno("fernando",33),
+      novoAluno("rhayza",27)
+    ]
+    
+    // function idadeDaTurma(nomeIdade,aluno){
+      
+    //   return nomeIdade + aluno.nome + aluno.idade;
+    // }
+    
+    // const somaDeIdades = alunos.reduce(idadeDaTurma,'');
+
+    // console.log(somaDeIdades);
+
+    function fCallback(aluno){
+      let soma =0;
+      return soma += aluno.idade;
+    }
+
+    function reduxe(callback,initial){
+      let somaIdade=initial;
+      for(let aluno of this){
+        somaIdade += callback(aluno);
+      }
+      return somaIdade;
+    }
+
+    alunos.functionReduxe=reduxe;
+
+   const result = alunos.functionReduxe(fCallback,0);
+
+   console.log(result)
+    
+  </script>
+</body>
+</html>
